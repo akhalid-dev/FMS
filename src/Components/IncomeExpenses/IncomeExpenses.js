@@ -5,7 +5,7 @@ export const IncomeExpenses = () => {
     return ( 
         <React.Fragment>
             <div className={styles['inc-exp-container']}>
-                <div>
+                <div className={styles['income']}>
                     <h4>
                         Income
                     </h4>
