@@ -1,6 +1,9 @@
 # Autonomous Financial Managment System (AFMS)
 React app using the Context API to track expenses  
 
+## Live Demo 
+# https://akhalid-dev.github.io/FMS/
+
 # Usage:
 The true power of this is only actualized in conjuction with real-time spending notification enabled from the financial 
 institution of choice and macro-based push service enabled
