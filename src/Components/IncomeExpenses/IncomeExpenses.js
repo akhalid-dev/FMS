@@ -5,20 +5,20 @@ export const IncomeExpenses = () => {
     return ( 
         <React.Fragment>
             <div className={styles['inc-exp-container']}>
-                <div className={styles['income']}>
-                    <h4>
+                <div className={`${styles.lineBorder} ${styles.boxPadding}`}>
+                    <h4 className={`${styles.h4}`}> 
                         Income
                     </h4>
-                    <p id="money-plus" className="money plus" >
+                    <p id="money-plus" className={`${styles.money} ${styles.plus}`} >
                         +$0.00
                     </p>
                 </div>
 
-                <div>
-                    <h4>
+                <div className={styles.boxPadding}>
+                    <h4 className={`${styles.h4}`}>
                         Expense
                     </h4>
-                    <p id="money-plus" className="money minus" >
+                    <p id="money-plus" className={`${styles.money} ${styles.minus}`}>
                         -$0.00
                     </p>
                 </div>
