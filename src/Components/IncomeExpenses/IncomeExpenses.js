@@ -6,7 +6,7 @@ export const IncomeExpenses = () => {
         <React.Fragment>
             <div className={styles['inc-exp-container']}>
                 <div className={`${styles.lineBorder} ${styles.boxPadding}`}>
-                    <h4 className={`${styles.h4}`}> 
+                    <h4> 
                         Income
                     </h4>
                     <p id="money-plus" className={`${styles.money} ${styles.plus}`} >
