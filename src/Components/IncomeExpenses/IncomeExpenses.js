@@ -9,7 +9,7 @@ export const IncomeExpenses = () => {
                     <h4> 
                         Income
                     </h4>
-                    <p id="money-plus" className={`${styles.money} ${styles.plus}`} >
+                    <p className={`${styles.money} ${styles.plus}`} >
                         +$0.00
                     </p>
                 </div>
@@ -18,7 +18,7 @@ export const IncomeExpenses = () => {
                     <h4 className={`${styles.h4}`}>
                         Expense
                     </h4>
-                    <p id="money-plus" className={`${styles.money} ${styles.minus}`}>
+                    <p className={`${styles.money} ${styles.minus}`}>
                         -$0.00
                     </p>
                 </div>

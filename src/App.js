@@ -5,18 +5,21 @@ import { IncomeExpenses } from './Components/IncomeExpenses/IncomeExpenses.js';
 import { TransactionList } from './Components/Transaction/TransactionList.js';
 import { AddTransaction } from './Components/Transaction/AddTransaction.js';
 
+import { GlobalProvider } from './Context/GlobalState.js';
+
 import './App.module.scss';
 
 function App() {
   return (
-    <>
+    <GlobalProvider>
+      
       <Header text="Expense Tracker"/>
       <Balance />
       <IncomeExpenses />
       <TransactionList text="History" />
-      <AddTransaction text="Add new transaction" />
+      <AddTransaction message="Add new transaction" />
             
-    </>
+    </GlobalProvider>
   );
 }
 

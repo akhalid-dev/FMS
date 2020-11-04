@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Balance.module.scss';
+import './Balance.module.scss';
 
 export const Balance = () => {
     return (
@@ -8,7 +8,7 @@ export const Balance = () => {
                 Your Balance
             </h4>
 
-            <h1 id="balance">
+            <h1>
                 $0.00
             </h1>
         </>

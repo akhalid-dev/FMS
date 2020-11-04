@@ -8,7 +8,7 @@ export const TransactionList = ({text}) => {
                  {text}
             </h3>
 
-            <ul id="transactions" className={styles['transaction-list']}>
+            <ul className={styles['transaction-list']}>
                 <li className={styles.minus}>
                     Cash <span>-$300</span> 
                     <button className={styles['delete-btn']}>x</button>
