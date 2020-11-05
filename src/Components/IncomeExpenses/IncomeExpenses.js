@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalContext } from '../../Context/GlobalState';
+
 import styles from './IncomeExpenses.module.scss';
 
 export const IncomeExpenses = () => {
+    const { transactions } = useContext(GlobalContext);
+
+    const amounts = transactions.map(transaction => transaction.amount);
+    
+    const income = amounts
+        .filter(amount => amount > 0)
+        .reduce((acc, item) => (acc += item), 0)
+        .toFixed(2);
+
+    const expense = amounts
+        .filter(amount => amount < 0)
+        .reduce((acc, item) => (acc += item), 0)
+        .toFixed(2);
     return ( 
         <React.Fragment>
             <div className={styles['inc-exp-container']}>
@@ -10,7 +25,7 @@ export const IncomeExpenses = () => {
                         Income
                     </h4>
                     <p className={`${styles.money} ${styles.plus}`} >
-                        +$0.00
+                        +${income}
                     </p>
                 </div>
 
@@ -19,7 +34,7 @@ export const IncomeExpenses = () => {
                         Expense
                     </h4>
                     <p className={`${styles.money} ${styles.minus}`}>
-                        -$0.00
+                        -${ Math.abs(expense) }
                     </p>
                 </div>
             </div>
